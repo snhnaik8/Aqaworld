@@ -1,0 +1,342 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); 
+
+.header{
+  background-image: url('img/CQ_01.jpg');
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  height: 800px;
+ }
+ 
+
+.header::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom,rgba(255,255,255,.64) 0,rgba(0,0,0,0) 59%,rgba(0,0,0,0) 100%);
+}
+
+.main-logo
+{ width:90px;
+  padding-left:15px;
+  position:absolute;
+  left:606px;
+  z-index:25;
+  top:10px;
+}
+
+.cruise-section{
+  border-radius: 5px;
+  margin-top: -167px;
+}
+.cruise-section2{
+  text-align: center;
+    padding: 20px 0;
+    color: #05addc;
+    text-transform: uppercase;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    margin: 0;
+}
+.cruise-card{
+  margin-bottom:15px;
+}
+.cruise-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.about-background
+{
+  position: absolute;
+  width: 50%;
+  max-width: 350px;
+  right: 0;
+  z-index: -1;
+}
+
+.about-section1
+{ font-weight: 700;
+color: #bcbcbc;
+text-transform: uppercase;
+}
+
+  .about-section2{ 
+    color: #05addc;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: Roboto,sans-serif;
+  }
+
+  .about-section3{
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: #666;
+    line-height: 22px;
+  }
+  .about-section-img{
+    width: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0 2px 10px 0 rgba(109,109,109,.06);
+}
+  
+.description{
+  position: absolute;
+  top: 65%;
+  width: 100%;
+text-align:center;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+font-size: 70px;
+line-height: normal;
+margin: 0;
+text-transform:uppercase;
+color: white;
+opacity: 0.6;
+}
+.my-ul
+{
+ width:100%;
+  float: none;
+  z-index: 19;
+}
+
+
+
+ .my-li:hover a:after{
+  content: '';
+  background: url("img/selection@1x.png") center no-repeat;
+  background-size: contain;
+  width: 44px;
+  height: 6px;
+  bottom: 8px;
+  margin: 0 auto;
+  left: 50%;
+  display: block;
+  
+ }
+
+
+ .navbar-toggler-icon { 
+  background-image: url("img/open-menu.png"); 
+} 
+
+.navbar-toggler{
+  outline: none !important;
+
+}
+.nav-link{
+  color: #05addc !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.nav-item{
+  width: 13.9%;
+  display: inline-block;
+    height: 61px;
+    text-align: center;
+     padding-top: 17px;
+     
+}
+
+.nav-link:hover{
+  font-weight: 900;
+}
+
+.gallery-section1{
+  font-weight: 700;
+  color: #bcbcbc;
+  text-transform: uppercase;
+}
+.gallery-ul{
+  
+    text-align: right;
+    float: none;
+}
+.gallery-li{
+  list-style: none;
+  display: inline-block;
+}
+
+.gallery-img{
+  margin-bottom: 15px;
+  
+}
+.gallery-img:hover:before{
+  content: 'View';
+  padding: 4px 25px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  letter-spacing: 2px;
+transform: translate(-50%,-50%);
+    /* -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%); */
+    border-radius: 2px;
+    background-color: rgba(27,27,27,.39);
+    border: 2px solid #fff;
+}
+
+.gallery-img:hover:after{
+  content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40,40,40,.64);
+}
+
+
+.contact-section{
+  position: relative;
+  text-align: center;
+  margin-bottom: 45px;
+  font-weight: 700;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  font-family: Roboto,sans-serif;
+}
+.contact-section1{
+  font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+    color: #999;
+    margin-bottom: 5px;
+}
+.contact-section2{
+  font-family: Roboto,sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+}
+.contact-section3{
+    font-size: 15px;
+    color: #05addc;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.contact-form{
+  margin: 6em 0;
+  position: relative;  
+ }
+ 
+ .contact-form h1{
+  padding:2em 1px;
+  color: #05addc; 
+ }
+ .contact-form .right{
+  max-width: 600px;
+ }
+ .contact-form .right .btn-secondary{
+  background:  #05addc;
+  color: #fff;
+  border:0;
+ }
+ .contact-form .right .form-control::placeholder{
+  color: #888;
+  font-size: 16px;
+ }
+ .contact-background
+ {
+  position: absolute;
+  width: 50%;
+  max-width: 350px;
+  right: 0;
+  z-index: -1;
+ }
+ .social-media{
+  padding: 10px 0;
+    text-align: right;
+}
+
+ @media  (max-width:576px)
+ {.header {
+     height: 450px;
+ }
+
+ .cruise-section{
+ margin-top: -35px;
+}
+
+.navbar{
+  background-color: white !important;
+  box-shadow: 0px 2px 10px 2px #6c757d;
+}
+.main-logo
+{ 
+  left:0px;
+  width: 60px;
+  top:5px;
+}
+.nav-item{
+  width: 100%;
+  text-align: center;
+     
+}
+.my-li-no-show{
+  display:none;
+}
+.social-media{
+  width: 50%;
+  padding-top: 0;
+  text-align: center;
+}
+}
+footer{
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  margin: 0;
+  position: relative;
+  z-index: 999;
+  background-color: #05addc;
+
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!--<link rel="styleshee" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="description">
+			<h1>AQUAWORLD CRUISES</h1>
+		</div>
+
+	</header>
+	<!-- Navigation -->
+	<div class="container">
+
+		<nav class="navbar navbar-expand-lg  fixed-top" id="home">
+
+			<a class="navbar-brand" href="#">
+				<img class="main-logo" src="img/logo@2x.png" alt="AQA World">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+				<!-- aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav my-ul">
+					<li class="nav-item active my-li">
+						<a class="nav-link" data-value="home" href="#">Home</a>
+					</li>
+					<li class="nav-item my-li">
+						<a class="nav-link" data-value="about" href="#">About us</a>
+					</li>
+					<li class="nav-item my-li">
+						<a class="nav-link" data-value="cruises" href="#">Cruises</a>
+					</li>
+					<li class="nav-item my-li-no-show">
+						<a class="nav-link" href="#"></a>
+					</li>
+					<li class="nav-item my-li">
+						<a class="nav-link" data-value="gallery" href="#">Gallery</a>
+					</li>
+					<li class="nav-item my-li">
+						<a class="nav-link" data-value="contact" href="#">Contact us</a>
+					</li>
+					<li class="nav-item my-li">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+	</div>
+
+	<!--Image-->
+
+
+	<div class="container cruise-section" id="cruises">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card cruise-card">
+					<img class="card-img-top" src="img/coral-queen-1.jpg">
+					<div class="card-body">
+						<h4 class="card-title cruise-section2">Coral Queen-I</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card cruise-card">
+					<img class="card-img-top" src="img/CQ2.png">
+					<div class="card-body">
+						<h4 class="card-title cruise-section2">coral Queen-II</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<div class="about-padding" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="about-section1">ABOUT</h2>
+					<h1 class="about-section2">Aqua World</h1>
+					<p class="about-section3"> Established in the early 21st Century, Aqua World is a brand synonymous
+						with aqua tourism in
+						Goa. In
+						2007, Our first river cruise, Coral Queen set sail in the serene waters of Mandovi. Ever since,
+						it
+						has become a favourite amongst travellers and settlers alike who wish to explore glimpses of
+						tradional music, dance, food and beverage against the backdrop of plush green hills, calm, blue
+						water and gorgeous amber sunsets.
+
+						With the demands increasing by the year, we added yet another cruise, Coral Queen II in 2016.
+
+						Whatever be the occasion, our endeavour will always be to deliver soulful luxury and leave you
+						with
+						a vessel full of memories. Welcome aboard!</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/ABOUT-US@2x.png" class="about-section-img">
+				</div>
+				<img src="img/bg_about us@2x.png" class="about-background">
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="Gallery padding" id="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h1 class="gallery-section1">gallery</h1>
+				</div>
+
+				<ul class="col-md-9 gallery-ul">
+
+					<li class="gallery-li"><a href="#" class="badge badge-info">coral queen I</a></li>
+					<li class="gallery-li"><a href="#" class="badge badge-info">coral queen II</a></li>
+				</ul>
+				<div onclick="myFunction('1','image 1')" class="col-lg-4 col-md-4 col-sm-12 gallery-img" data-toggle="modal"
+					data-target="#exampleModal">
+					<img src="img/gallery1.jpg" class="img-fluid">
+					
+				</div>
+				<div onclick="myFunction('2','image 2')" class="col-lg-4 col-md-4 col-sm-12 gallery-img" data-toggle="modal"
+					data-target="#exampleModal">
+					<img src="img/gallery2.jpg" class="img-fluid">
+				</div>
+				<div onclick="myFunction('3','image 3')" class="col-lg-4 col-md-4 col-sm-12 gallery-img" data-toggle="modal"
+					data-target="#exampleModal">
+					<img src="img/gallery3.jpg" class="img-fluid">
+				</div>
+				<div onclick="myFunction('4','image 4')" class="col-lg-4 col-md-4 col-sm-12 gallery-img" data-toggle="modal"
+					data-target="#exampleModal">
+					<img src="img/gallery4.jpg" class="img-fluid">
+				</div>
+				<div onclick="myFunction('5','image 5')" class="col-lg-4 col-md-4 col-sm-12 gallery-img" data-toggle="modal"
+					data-target="#exampleModal">
+					<img src="img/gallery5.jpeg" class="img-fluid">
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<!-- <img id="imgModal" src="img/gallery1.jpg" class="img-fluid"> -->
+
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+									  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+									  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+									</ol>
+									<div class="carousel-inner">
+									  <div class="carousel-item active">
+										<img class="d-block w-100" src="img/gallery1.jpg" alt="First slide">
+									  </div>
+									  <div class="carousel-item">
+										<img class="d-block w-100" src="img/gallery2.jpg" alt="Second slide">
+									  </div>
+									  <div class="carousel-item">
+										<img class="d-block w-100" src="img/gallery3.jpg" alt="Third slide">
+									  </div>
+									  <div class="carousel-item">
+										<img class="d-block w-100" src="img/gallery4.jpg" alt="Third slide">
+									  </div>
+									  <div class="carousel-item">
+										<img class="d-block w-100" src="img/gallery5.jpeg" alt="Third slide">
+									  </div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									  <span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									  <span class="sr-only">Next</span>
+									</a>
+								  </div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="contact-us container" id="contact">
+		<h1 class="contact-section">Contact Us</h1>
+		<form>
+			<div class="row">
+				<div class="col-md-4">
+					<p class="contact-section1">Corporate Office</p>
+					<p class="contact-section2">3rd Floor, Joffre Residency, Behind Goa College of Pharmacy,</p>
+					<p class="contact-section2"> Panjim, Goa - 403001</p>
+					<br>
+					<p class="contact-section1"> Telephone</p>
+					<p class="contact-section3">+91 9823038245 ,+91 8322420920</p>
+					<br>
+					<p class="contact-section1">Email</p>
+					<p class="contact-section3">info@aquaworldcruises.com</p>
+					<p><iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.0682550379893!2d73.82711232062528!3d15.500926117873494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f792b92622ad8c2!2sPanaji+Jetty!5e0!3m2!1sen!2sin!4v1494640960028"
+							frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+				<div class="col-md-4">
+					<p class="contact-section1">Jetty Office</p>
+					<p class="contact-section2">Tourism Jetty,Below the Mandovi Bridge,Patto,</p>
+					<p class="contact-section2"> Panjim, Goa - 403001</p>
+					<br>
+					<p class="contact-section1"> Telephone</p>
+					<p class="contact-section3">+91 832 2437630 ,+91 832 6519755</p>
+					<br>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
+							name="email">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control form-control-lg"></textarea>
+					</div>
+					<input type="submit" class="btn btn-block" value="Send" name="">
+				</div>
+				<img src="img/bg_about us@2x.png" class="contact-background">
+			</div>
+		</form>
+	</div>
+	<br>
+	<br>
+
+	<script type="text/javascript" src="main.js"></script>
+	<footer>
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-6">
+					<p>Designed and Maintained by Sneha</p>
+				</div>
+
+				<div class="col-md-6">
+					<div class="social-media">
+
+						<a href="#"><i class="fas fa-twitter"></i></a>
+
+						<a href="#"><i class="fas fa-instagram"></i></a>
+
+						<a href="#"><i class="fas fa-facebook"></i></a>
+
+						<a href="#"><i class="fas fa-youtube"></i></a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
